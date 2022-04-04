@@ -1,0 +1,90 @@
+{
+    "devices": [
+        {
+            "id": "1234",
+            "type": "Sensor X",
+            "price": 20,
+            "currency": "USD",
+            "isFavorite": false,
+            "imageUrl": "https://cdn.rona.ca/images/05225160_L.jpg",
+            "title": "Test Sensor X",
+            "description": "Sensor X"
+        },
+        {
+            "id": "1233",
+            "type": "Sensor Y",
+            "price": 15,
+            "currency": "USD",
+            "isFavorite": false,
+            "title": "Test Sensor Y",
+            "description": "Sensor Y"
+        },
+        {
+            "id": "1232",
+            "type": "Sensor Z",
+            "price": 30,
+            "currency": "USD",
+            "isFavorite": false,
+            "imageUrl": "https://m.media-amazon.com/images/I/41UpejlVhSL._AC_SX425_.jpg",
+            "title": "Test Sensor Z"
+        },
+        {
+            "id": "1235",
+            "type": "Thermostat X",
+            "price": 25,
+            "currency": "USD",
+            "isFavorite": false,
+            "imageUrl": "https://m.media-amazon.com/images/I/71ct0JpVx+L._AC_SX425_.jpg",
+            "title": "Test Thermostat X",
+            "description": "Thermostat X"
+        },
+        {
+            "id": "1236",
+            "type": "Thermostat Y",
+            "price": 20,
+            "currency": "USD",
+            "isFavorite": false,
+            "imageUrl": "https://cdn.rona.ca/images/5954023_L.jpg",
+            "title": "Test Thermostat Y",
+            "description": "Thermostat Y"
+        },
+        {
+            "id": "1237",
+            "type": "Thermostat Z",
+            "price": 50,
+            "currency": "USD",
+            "isFavorite": false,
+            "imageUrl": "https://www.reviewgeek.com/p/uploads/2020/02/fb5c81ed-11.png",
+            "title": "Test Thermostat Z",
+            "description": "Thermostat Z"
+        },
+        {
+            "id": "1240",
+            "type": "Camera X",
+            "price": 23.99,
+            "currency": "USD",
+            "isFavorite": false,
+            "imageUrl": "https://m.media-amazon.com/images/I/51N9s33WE6L._AC_SY550_.jpg",
+            "title": "Test Camera X",
+            "description": "Camera X"
+        },
+        {
+            "id": "1241",
+            "type": "Camera Y",
+            "price": 33.99,
+            "currency": "USD",
+            "isFavorite": false,
+            "imageUrl": "https://cdn.rona.ca/images/64145036_L.jpg",
+            "title": "Test Camera Y"
+        },
+        {
+            "id": "1242",
+            "type": "Camera Z",
+            "price": 27.99,
+            "currency": "USD",
+            "isFavorite": false,
+            "imageUrl": "https://media.wired.com/photos/613bdcf9928ce651c8571f76/master/w_1280%2Cc_limit/Gear-Cync-Indoor-Smart-Camera-SOURCE-Cync.png",
+            "title": "Test Camera Z",
+        }
+    ]
+}

@@ -1,0 +1,801 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		552C5DB727F6879300154637 /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552C5DB427F6879200154637 /* URLSession+Extension.swift */; };
+		552C5DB827F6879300154637 /* URLRequest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552C5DB527F6879200154637 /* URLRequest+Extension.swift */; };
+		552C5DB927F6879300154637 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552C5DB627F6879200154637 /* UIImageView+Extension.swift */; };
+		552F8E3B27F8BDBF00162BE7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E3927F8BDBF00162BE7 /* Utils.swift */; };
+		552F8E3C27F8BDBF00162BE7 /* XCTestCase+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E3A27F8BDBF00162BE7 /* XCTestCase+Extension.swift */; };
+		552F8E3F27FB8DAA00162BE7 /* DeviceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E3D27FB8DAA00162BE7 /* DeviceListViewController.swift */; };
+		552F8E4027FB8DAA00162BE7 /* DeviceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E3E27FB8DAA00162BE7 /* DeviceListViewModel.swift */; };
+		552F8E4227FB8DB300162BE7 /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E4127FB8DB300162BE7 /* DeviceCell.swift */; };
+		55FBDC6427F67C3B00905696 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDC6327F67C3B00905696 /* AppDelegate.swift */; };
+		55FBDC6627F67C3B00905696 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDC6527F67C3B00905696 /* SceneDelegate.swift */; };
+		55FBDC6D27F67C3F00905696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55FBDC6C27F67C3F00905696 /* Assets.xcassets */; };
+		55FBDC7027F67C3F00905696 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55FBDC6E27F67C3F00905696 /* LaunchScreen.storyboard */; };
+		55FBDC7B27F67C3F00905696 /* valet_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDC7A27F67C3F00905696 /* valet_challengeTests.swift */; };
+		55FBDC8527F67C3F00905696 /* valet_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDC8427F67C3F00905696 /* valet_challengeUITests.swift */; };
+		55FBDC8727F67C3F00905696 /* valet_challengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDC8627F67C3F00905696 /* valet_challengeUITestsLaunchTests.swift */; };
+		55FBDCA327F67D3400905696 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDC9B27F67D3400905696 /* NetworkProvider.swift */; };
+		55FBDCA427F67D3400905696 /* EncodableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDC9C27F67D3400905696 /* EncodableObject.swift */; };
+		55FBDCA527F67D3400905696 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDC9D27F67D3400905696 /* HTTPMethod.swift */; };
+		55FBDCA627F67D3400905696 /* NetworkTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDC9E27F67D3400905696 /* NetworkTarget.swift */; };
+		55FBDCA727F67D3400905696 /* NetworkProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDC9F27F67D3400905696 /* NetworkProviderProtocol.swift */; };
+		55FBDCA827F67D3400905696 /* NetworkRequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDCA027F67D3400905696 /* NetworkRequestType.swift */; };
+		55FBDCA927F67D3400905696 /* APIErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDCA127F67D3400905696 /* APIErrors.swift */; };
+		55FBDCAA27F67D3400905696 /* NetworkServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDCA227F67D3400905696 /* NetworkServiceProtocol.swift */; };
+		55FBDCB027F67DF500905696 /* NetworkProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDCAE27F67DF500905696 /* NetworkProviderTests.swift */; };
+		55FBDCB127F67DF500905696 /* NetworkProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDCAF27F67DF500905696 /* NetworkProviderMock.swift */; };
+		55FBDCB327F67E1D00905696 /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDCB227F67E1D00905696 /* MockAPI.swift */; };
+		55FBDCB527F67F0700905696 /* devices.json in Resources */ = {isa = PBXBuildFile; fileRef = 55FBDCB427F67F0700905696 /* devices.json */; };
+		55FBDCB827F681DA00905696 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDCB727F681DA00905696 /* Device.swift */; };
+		55FBDCBB27F682F800905696 /* DeviceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDCBA27F682F800905696 /* DeviceAPI.swift */; };
+		55FBDCBD27F6836000905696 /* DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDCBC27F6836000905696 /* DeviceService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55FBDC7727F67C3F00905696 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55FBDC5827F67C3B00905696 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55FBDC5F27F67C3B00905696;
+			remoteInfo = "valet-challenge";
+		};
+		55FBDC8127F67C3F00905696 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55FBDC5827F67C3B00905696 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55FBDC5F27F67C3B00905696;
+			remoteInfo = "valet-challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		552C5DB427F6879200154637 /* URLSession+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
+		552C5DB527F6879200154637 /* URLRequest+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extension.swift"; sourceTree = "<group>"; };
+		552C5DB627F6879200154637 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		552F8E3927F8BDBF00162BE7 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		552F8E3A27F8BDBF00162BE7 /* XCTestCase+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extension.swift"; sourceTree = "<group>"; };
+		552F8E3D27FB8DAA00162BE7 /* DeviceListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceListViewController.swift; sourceTree = "<group>"; };
+		552F8E3E27FB8DAA00162BE7 /* DeviceListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceListViewModel.swift; sourceTree = "<group>"; };
+		552F8E4127FB8DB300162BE7 /* DeviceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
+		55FBDC6027F67C3B00905696 /* valet-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "valet-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55FBDC6327F67C3B00905696 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		55FBDC6527F67C3B00905696 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		55FBDC6C27F67C3F00905696 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		55FBDC6F27F67C3F00905696 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		55FBDC7127F67C3F00905696 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55FBDC7627F67C3F00905696 /* valet-challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "valet-challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55FBDC7A27F67C3F00905696 /* valet_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = valet_challengeTests.swift; sourceTree = "<group>"; };
+		55FBDC8027F67C3F00905696 /* valet-challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "valet-challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55FBDC8427F67C3F00905696 /* valet_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = valet_challengeUITests.swift; sourceTree = "<group>"; };
+		55FBDC8627F67C3F00905696 /* valet_challengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = valet_challengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		55FBDC9B27F67D3400905696 /* NetworkProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		55FBDC9C27F67D3400905696 /* EncodableObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodableObject.swift; sourceTree = "<group>"; };
+		55FBDC9D27F67D3400905696 /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		55FBDC9E27F67D3400905696 /* NetworkTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTarget.swift; sourceTree = "<group>"; };
+		55FBDC9F27F67D3400905696 /* NetworkProviderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProviderProtocol.swift; sourceTree = "<group>"; };
+		55FBDCA027F67D3400905696 /* NetworkRequestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequestType.swift; sourceTree = "<group>"; };
+		55FBDCA127F67D3400905696 /* APIErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIErrors.swift; sourceTree = "<group>"; };
+		55FBDCA227F67D3400905696 /* NetworkServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkServiceProtocol.swift; sourceTree = "<group>"; };
+		55FBDCAE27F67DF500905696 /* NetworkProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProviderTests.swift; sourceTree = "<group>"; };
+		55FBDCAF27F67DF500905696 /* NetworkProviderMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProviderMock.swift; sourceTree = "<group>"; };
+		55FBDCB227F67E1D00905696 /* MockAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
+		55FBDCB427F67F0700905696 /* devices.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = devices.json; sourceTree = "<group>"; };
+		55FBDCB727F681DA00905696 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		55FBDCBA27F682F800905696 /* DeviceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceAPI.swift; sourceTree = "<group>"; };
+		55FBDCBC27F6836000905696 /* DeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55FBDC5D27F67C3B00905696 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55FBDC7327F67C3F00905696 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55FBDC7D27F67C3F00905696 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		552C5DAE27F684CA00154637 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				552F8E3D27FB8DAA00162BE7 /* DeviceListViewController.swift */,
+				552F8E3E27FB8DAA00162BE7 /* DeviceListViewModel.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		552C5DB327F6878000154637 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				552C5DB627F6879200154637 /* UIImageView+Extension.swift */,
+				552C5DB527F6879200154637 /* URLRequest+Extension.swift */,
+				552C5DB427F6879200154637 /* URLSession+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		552F8E3827F8BDA500162BE7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				552F8E3927F8BDBF00162BE7 /* Utils.swift */,
+				552F8E3A27F8BDBF00162BE7 /* XCTestCase+Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		55FBDC5727F67C3B00905696 = {
+			isa = PBXGroup;
+			children = (
+				55FBDC6227F67C3B00905696 /* valet-challenge */,
+				55FBDC7927F67C3F00905696 /* valet-challengeTests */,
+				55FBDC8327F67C3F00905696 /* valet-challengeUITests */,
+				55FBDC6127F67C3B00905696 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55FBDC6127F67C3B00905696 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55FBDC6027F67C3B00905696 /* valet-challenge.app */,
+				55FBDC7627F67C3F00905696 /* valet-challengeTests.xctest */,
+				55FBDC8027F67C3F00905696 /* valet-challengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55FBDC6227F67C3B00905696 /* valet-challenge */ = {
+			isa = PBXGroup;
+			children = (
+				55FBDC6327F67C3B00905696 /* AppDelegate.swift */,
+				55FBDC6527F67C3B00905696 /* SceneDelegate.swift */,
+				55FBDC9327F67C7300905696 /* Controllers */,
+				55FBDC9427F67C8200905696 /* Views */,
+				55FBDC9527F67C8600905696 /* Models */,
+				55FBDC9627F67C9000905696 /* Services */,
+				55FBDC9727F67C9800905696 /* Network */,
+				55FBDC9927F67CA600905696 /* Resources */,
+				55FBDC9827F67C9F00905696 /* Utils */,
+			);
+			path = "valet-challenge";
+			sourceTree = "<group>";
+		};
+		55FBDC7927F67C3F00905696 /* valet-challengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				55FBDCAB27F67DC800905696 /* Network */,
+				552F8E3827F8BDA500162BE7 /* Utils */,
+				55FBDC7A27F67C3F00905696 /* valet_challengeTests.swift */,
+			);
+			path = "valet-challengeTests";
+			sourceTree = "<group>";
+		};
+		55FBDC8327F67C3F00905696 /* valet-challengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				55FBDC8427F67C3F00905696 /* valet_challengeUITests.swift */,
+				55FBDC8627F67C3F00905696 /* valet_challengeUITestsLaunchTests.swift */,
+			);
+			path = "valet-challengeUITests";
+			sourceTree = "<group>";
+		};
+		55FBDC9327F67C7300905696 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				552C5DAE27F684CA00154637 /* List */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		55FBDC9427F67C8200905696 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				552F8E4127FB8DB300162BE7 /* DeviceCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		55FBDC9527F67C8600905696 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				55FBDCB727F681DA00905696 /* Device.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		55FBDC9627F67C9000905696 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				55FBDCBC27F6836000905696 /* DeviceService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		55FBDC9727F67C9800905696 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				55FBDCB927F682E200905696 /* API */,
+				55FBDC9A27F67D1900905696 /* Base */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		55FBDC9827F67C9F00905696 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				552C5DB327F6878000154637 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		55FBDC9927F67CA600905696 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				55FBDC6C27F67C3F00905696 /* Assets.xcassets */,
+				55FBDC6E27F67C3F00905696 /* LaunchScreen.storyboard */,
+				55FBDC7127F67C3F00905696 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		55FBDC9A27F67D1900905696 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				55FBDCA127F67D3400905696 /* APIErrors.swift */,
+				55FBDC9C27F67D3400905696 /* EncodableObject.swift */,
+				55FBDC9D27F67D3400905696 /* HTTPMethod.swift */,
+				55FBDC9B27F67D3400905696 /* NetworkProvider.swift */,
+				55FBDC9F27F67D3400905696 /* NetworkProviderProtocol.swift */,
+				55FBDCA027F67D3400905696 /* NetworkRequestType.swift */,
+				55FBDCA227F67D3400905696 /* NetworkServiceProtocol.swift */,
+				55FBDC9E27F67D3400905696 /* NetworkTarget.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		55FBDCAB27F67DC800905696 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				55FBDCAC27F67DDE00905696 /* Base */,
+				55FBDCAD27F67DE500905696 /* MockData */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		55FBDCAC27F67DDE00905696 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				55FBDCAF27F67DF500905696 /* NetworkProviderMock.swift */,
+				55FBDCAE27F67DF500905696 /* NetworkProviderTests.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		55FBDCAD27F67DE500905696 /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				55FBDCB227F67E1D00905696 /* MockAPI.swift */,
+				55FBDCB427F67F0700905696 /* devices.json */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
+		55FBDCB927F682E200905696 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				55FBDCBA27F682F800905696 /* DeviceAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55FBDC5F27F67C3B00905696 /* valet-challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55FBDC8A27F67C3F00905696 /* Build configuration list for PBXNativeTarget "valet-challenge" */;
+			buildPhases = (
+				55FBDC5C27F67C3B00905696 /* Sources */,
+				55FBDC5D27F67C3B00905696 /* Frameworks */,
+				55FBDC5E27F67C3B00905696 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "valet-challenge";
+			productName = "valet-challenge";
+			productReference = 55FBDC6027F67C3B00905696 /* valet-challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		55FBDC7527F67C3F00905696 /* valet-challengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55FBDC8D27F67C3F00905696 /* Build configuration list for PBXNativeTarget "valet-challengeTests" */;
+			buildPhases = (
+				55FBDC7227F67C3F00905696 /* Sources */,
+				55FBDC7327F67C3F00905696 /* Frameworks */,
+				55FBDC7427F67C3F00905696 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55FBDC7827F67C3F00905696 /* PBXTargetDependency */,
+			);
+			name = "valet-challengeTests";
+			productName = "valet-challengeTests";
+			productReference = 55FBDC7627F67C3F00905696 /* valet-challengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		55FBDC7F27F67C3F00905696 /* valet-challengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55FBDC9027F67C3F00905696 /* Build configuration list for PBXNativeTarget "valet-challengeUITests" */;
+			buildPhases = (
+				55FBDC7C27F67C3F00905696 /* Sources */,
+				55FBDC7D27F67C3F00905696 /* Frameworks */,
+				55FBDC7E27F67C3F00905696 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55FBDC8227F67C3F00905696 /* PBXTargetDependency */,
+			);
+			name = "valet-challengeUITests";
+			productName = "valet-challengeUITests";
+			productReference = 55FBDC8027F67C3F00905696 /* valet-challengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55FBDC5827F67C3B00905696 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					55FBDC5F27F67C3B00905696 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					55FBDC7527F67C3F00905696 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 55FBDC5F27F67C3B00905696;
+					};
+					55FBDC7F27F67C3F00905696 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 55FBDC5F27F67C3B00905696;
+					};
+				};
+			};
+			buildConfigurationList = 55FBDC5B27F67C3B00905696 /* Build configuration list for PBXProject "valet-challenge" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55FBDC5727F67C3B00905696;
+			productRefGroup = 55FBDC6127F67C3B00905696 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55FBDC5F27F67C3B00905696 /* valet-challenge */,
+				55FBDC7527F67C3F00905696 /* valet-challengeTests */,
+				55FBDC7F27F67C3F00905696 /* valet-challengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55FBDC5E27F67C3B00905696 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55FBDC7027F67C3F00905696 /* LaunchScreen.storyboard in Resources */,
+				55FBDC6D27F67C3F00905696 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55FBDC7427F67C3F00905696 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55FBDCB527F67F0700905696 /* devices.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55FBDC7E27F67C3F00905696 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55FBDC5C27F67C3B00905696 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				552F8E4227FB8DB300162BE7 /* DeviceCell.swift in Sources */,
+				55FBDCB827F681DA00905696 /* Device.swift in Sources */,
+				55FBDCA827F67D3400905696 /* NetworkRequestType.swift in Sources */,
+				552F8E4027FB8DAA00162BE7 /* DeviceListViewModel.swift in Sources */,
+				55FBDCA427F67D3400905696 /* EncodableObject.swift in Sources */,
+				55FBDC6427F67C3B00905696 /* AppDelegate.swift in Sources */,
+				552C5DB727F6879300154637 /* URLSession+Extension.swift in Sources */,
+				55FBDC6627F67C3B00905696 /* SceneDelegate.swift in Sources */,
+				55FBDCAA27F67D3400905696 /* NetworkServiceProtocol.swift in Sources */,
+				55FBDCA627F67D3400905696 /* NetworkTarget.swift in Sources */,
+				552C5DB827F6879300154637 /* URLRequest+Extension.swift in Sources */,
+				55FBDCA527F67D3400905696 /* HTTPMethod.swift in Sources */,
+				55FBDCBB27F682F800905696 /* DeviceAPI.swift in Sources */,
+				552C5DB927F6879300154637 /* UIImageView+Extension.swift in Sources */,
+				55FBDCA727F67D3400905696 /* NetworkProviderProtocol.swift in Sources */,
+				55FBDCBD27F6836000905696 /* DeviceService.swift in Sources */,
+				552F8E3F27FB8DAA00162BE7 /* DeviceListViewController.swift in Sources */,
+				55FBDCA327F67D3400905696 /* NetworkProvider.swift in Sources */,
+				55FBDCA927F67D3400905696 /* APIErrors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55FBDC7227F67C3F00905696 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				552F8E3C27F8BDBF00162BE7 /* XCTestCase+Extension.swift in Sources */,
+				552F8E3B27F8BDBF00162BE7 /* Utils.swift in Sources */,
+				55FBDCB327F67E1D00905696 /* MockAPI.swift in Sources */,
+				55FBDCB127F67DF500905696 /* NetworkProviderMock.swift in Sources */,
+				55FBDC7B27F67C3F00905696 /* valet_challengeTests.swift in Sources */,
+				55FBDCB027F67DF500905696 /* NetworkProviderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55FBDC7C27F67C3F00905696 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55FBDC8527F67C3F00905696 /* valet_challengeUITests.swift in Sources */,
+				55FBDC8727F67C3F00905696 /* valet_challengeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55FBDC7827F67C3F00905696 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55FBDC5F27F67C3B00905696 /* valet-challenge */;
+			targetProxy = 55FBDC7727F67C3F00905696 /* PBXContainerItemProxy */;
+		};
+		55FBDC8227F67C3F00905696 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55FBDC5F27F67C3B00905696 /* valet-challenge */;
+			targetProxy = 55FBDC8127F67C3F00905696 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		55FBDC6E27F67C3F00905696 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55FBDC6F27F67C3F00905696 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55FBDC8827F67C3F00905696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		55FBDC8927F67C3F00905696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55FBDC8B27F67C3F00905696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K2Q453W5U7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "valet-challenge/Resources/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luizsoares.valet-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		55FBDC8C27F67C3F00905696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K2Q453W5U7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "valet-challenge/Resources/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luizsoares.valet-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		55FBDC8E27F67C3F00905696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K2Q453W5U7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luizsoares.valet-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/valet-challenge.app/valet-challenge";
+			};
+			name = Debug;
+		};
+		55FBDC8F27F67C3F00905696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K2Q453W5U7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luizsoares.valet-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/valet-challenge.app/valet-challenge";
+			};
+			name = Release;
+		};
+		55FBDC9127F67C3F00905696 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K2Q453W5U7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luizsoares.valet-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "valet-challenge";
+			};
+			name = Debug;
+		};
+		55FBDC9227F67C3F00905696 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K2Q453W5U7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luizsoares.valet-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "valet-challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55FBDC5B27F67C3B00905696 /* Build configuration list for PBXProject "valet-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55FBDC8827F67C3F00905696 /* Debug */,
+				55FBDC8927F67C3F00905696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55FBDC8A27F67C3F00905696 /* Build configuration list for PBXNativeTarget "valet-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55FBDC8B27F67C3F00905696 /* Debug */,
+				55FBDC8C27F67C3F00905696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55FBDC8D27F67C3F00905696 /* Build configuration list for PBXNativeTarget "valet-challengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55FBDC8E27F67C3F00905696 /* Debug */,
+				55FBDC8F27F67C3F00905696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55FBDC9027F67C3F00905696 /* Build configuration list for PBXNativeTarget "valet-challengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55FBDC9127F67C3F00905696 /* Debug */,
+				55FBDC9227F67C3F00905696 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 55FBDC5827F67C3B00905696 /* Project object */;
+}
