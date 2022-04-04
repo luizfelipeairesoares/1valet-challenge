@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		552C5DB027F684D900154637 /* DeviceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552C5DAF27F684D900154637 /* DeviceListViewController.swift */; };
-		552C5DB227F685A600154637 /* DeviceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552C5DB127F685A600154637 /* DeviceListViewModel.swift */; };
 		552C5DB727F6879300154637 /* URLSession+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552C5DB427F6879200154637 /* URLSession+Extension.swift */; };
 		552C5DB827F6879300154637 /* URLRequest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552C5DB527F6879200154637 /* URLRequest+Extension.swift */; };
 		552C5DB927F6879300154637 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552C5DB627F6879200154637 /* UIImageView+Extension.swift */; };
-		552C5DBB27F687C400154637 /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552C5DBA27F687C400154637 /* DeviceCell.swift */; };
 		552F8E3B27F8BDBF00162BE7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E3927F8BDBF00162BE7 /* Utils.swift */; };
 		552F8E3C27F8BDBF00162BE7 /* XCTestCase+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E3A27F8BDBF00162BE7 /* XCTestCase+Extension.swift */; };
+		552F8E3F27FB8DAA00162BE7 /* DeviceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E3D27FB8DAA00162BE7 /* DeviceListViewController.swift */; };
+		552F8E4027FB8DAA00162BE7 /* DeviceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E3E27FB8DAA00162BE7 /* DeviceListViewModel.swift */; };
+		552F8E4227FB8DB300162BE7 /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E4127FB8DB300162BE7 /* DeviceCell.swift */; };
 		55FBDC6427F67C3B00905696 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDC6327F67C3B00905696 /* AppDelegate.swift */; };
 		55FBDC6627F67C3B00905696 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDC6527F67C3B00905696 /* SceneDelegate.swift */; };
 		55FBDC6D27F67C3F00905696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55FBDC6C27F67C3F00905696 /* Assets.xcassets */; };
@@ -57,14 +57,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		552C5DAF27F684D900154637 /* DeviceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewController.swift; sourceTree = "<group>"; };
-		552C5DB127F685A600154637 /* DeviceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewModel.swift; sourceTree = "<group>"; };
 		552C5DB427F6879200154637 /* URLSession+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Extension.swift"; sourceTree = "<group>"; };
 		552C5DB527F6879200154637 /* URLRequest+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extension.swift"; sourceTree = "<group>"; };
 		552C5DB627F6879200154637 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
-		552C5DBA27F687C400154637 /* DeviceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
 		552F8E3927F8BDBF00162BE7 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		552F8E3A27F8BDBF00162BE7 /* XCTestCase+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extension.swift"; sourceTree = "<group>"; };
+		552F8E3D27FB8DAA00162BE7 /* DeviceListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceListViewController.swift; sourceTree = "<group>"; };
+		552F8E3E27FB8DAA00162BE7 /* DeviceListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceListViewModel.swift; sourceTree = "<group>"; };
+		552F8E4127FB8DB300162BE7 /* DeviceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
 		55FBDC6027F67C3B00905696 /* valet-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "valet-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55FBDC6327F67C3B00905696 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55FBDC6527F67C3B00905696 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,8 +121,8 @@
 		552C5DAE27F684CA00154637 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				552C5DAF27F684D900154637 /* DeviceListViewController.swift */,
-				552C5DB127F685A600154637 /* DeviceListViewModel.swift */,
+				552F8E3D27FB8DAA00162BE7 /* DeviceListViewController.swift */,
+				552F8E3E27FB8DAA00162BE7 /* DeviceListViewModel.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -212,7 +212,7 @@
 		55FBDC9427F67C8200905696 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				552C5DBA27F687C400154637 /* DeviceCell.swift */,
+				552F8E4127FB8DB300162BE7 /* DeviceCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -441,15 +441,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				552C5DBB27F687C400154637 /* DeviceCell.swift in Sources */,
+				552F8E4227FB8DB300162BE7 /* DeviceCell.swift in Sources */,
 				55FBDCB827F681DA00905696 /* Device.swift in Sources */,
 				55FBDCA827F67D3400905696 /* NetworkRequestType.swift in Sources */,
+				552F8E4027FB8DAA00162BE7 /* DeviceListViewModel.swift in Sources */,
 				55FBDCA427F67D3400905696 /* EncodableObject.swift in Sources */,
 				55FBDC6427F67C3B00905696 /* AppDelegate.swift in Sources */,
 				552C5DB727F6879300154637 /* URLSession+Extension.swift in Sources */,
 				55FBDC6627F67C3B00905696 /* SceneDelegate.swift in Sources */,
 				55FBDCAA27F67D3400905696 /* NetworkServiceProtocol.swift in Sources */,
-				552C5DB027F684D900154637 /* DeviceListViewController.swift in Sources */,
 				55FBDCA627F67D3400905696 /* NetworkTarget.swift in Sources */,
 				552C5DB827F6879300154637 /* URLRequest+Extension.swift in Sources */,
 				55FBDCA527F67D3400905696 /* HTTPMethod.swift in Sources */,
@@ -457,7 +457,7 @@
 				552C5DB927F6879300154637 /* UIImageView+Extension.swift in Sources */,
 				55FBDCA727F67D3400905696 /* NetworkProviderProtocol.swift in Sources */,
 				55FBDCBD27F6836000905696 /* DeviceService.swift in Sources */,
-				552C5DB227F685A600154637 /* DeviceListViewModel.swift in Sources */,
+				552F8E3F27FB8DAA00162BE7 /* DeviceListViewController.swift in Sources */,
 				55FBDCA327F67D3400905696 /* NetworkProvider.swift in Sources */,
 				55FBDCA927F67D3400905696 /* APIErrors.swift in Sources */,
 			);
