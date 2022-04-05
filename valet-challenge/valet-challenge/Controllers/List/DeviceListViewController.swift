@@ -78,6 +78,8 @@ class DeviceListViewController: UIViewController, DeviceListVCProtocol {
     // MARK: - Protocol Functions
     
     func reloadDevices() {
+        tableView.isHidden = false
+        emptyLabel.isHidden = true
         tableView.reloadData()
     }
     
