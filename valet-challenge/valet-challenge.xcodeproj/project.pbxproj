@@ -15,6 +15,8 @@
 		552F8E3F27FB8DAA00162BE7 /* DeviceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E3D27FB8DAA00162BE7 /* DeviceListViewController.swift */; };
 		552F8E4027FB8DAA00162BE7 /* DeviceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E3E27FB8DAA00162BE7 /* DeviceListViewModel.swift */; };
 		552F8E4227FB8DB300162BE7 /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E4127FB8DB300162BE7 /* DeviceCell.swift */; };
+		552F8E4527FBBF8900162BE7 /* DeviceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E4427FBBF8900162BE7 /* DeviceDetailViewController.swift */; };
+		552F8E4727FBBFA300162BE7 /* DeviceDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E4627FBBFA300162BE7 /* DeviceDetailViewModel.swift */; };
 		55FBDC6427F67C3B00905696 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDC6327F67C3B00905696 /* AppDelegate.swift */; };
 		55FBDC6627F67C3B00905696 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDC6527F67C3B00905696 /* SceneDelegate.swift */; };
 		55FBDC6D27F67C3F00905696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55FBDC6C27F67C3F00905696 /* Assets.xcassets */; };
@@ -65,6 +67,8 @@
 		552F8E3D27FB8DAA00162BE7 /* DeviceListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceListViewController.swift; sourceTree = "<group>"; };
 		552F8E3E27FB8DAA00162BE7 /* DeviceListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceListViewModel.swift; sourceTree = "<group>"; };
 		552F8E4127FB8DB300162BE7 /* DeviceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
+		552F8E4427FBBF8900162BE7 /* DeviceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailViewController.swift; sourceTree = "<group>"; };
+		552F8E4627FBBFA300162BE7 /* DeviceDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailViewModel.swift; sourceTree = "<group>"; };
 		55FBDC6027F67C3B00905696 /* valet-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "valet-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55FBDC6327F67C3B00905696 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55FBDC6527F67C3B00905696 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +150,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		552F8E4327FBBF7400162BE7 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				552F8E4427FBBF8900162BE7 /* DeviceDetailViewController.swift */,
+				552F8E4627FBBFA300162BE7 /* DeviceDetailViewModel.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		55FBDC5727F67C3B00905696 = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				552C5DAE27F684CA00154637 /* List */,
+				552F8E4327FBBF7400162BE7 /* Detail */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -447,7 +461,9 @@
 				552F8E4027FB8DAA00162BE7 /* DeviceListViewModel.swift in Sources */,
 				55FBDCA427F67D3400905696 /* EncodableObject.swift in Sources */,
 				55FBDC6427F67C3B00905696 /* AppDelegate.swift in Sources */,
+				552F8E4527FBBF8900162BE7 /* DeviceDetailViewController.swift in Sources */,
 				552C5DB727F6879300154637 /* URLSession+Extension.swift in Sources */,
+				552F8E4727FBBFA300162BE7 /* DeviceDetailViewModel.swift in Sources */,
 				55FBDC6627F67C3B00905696 /* SceneDelegate.swift in Sources */,
 				55FBDCAA27F67D3400905696 /* NetworkServiceProtocol.swift in Sources */,
 				55FBDCA627F67D3400905696 /* NetworkTarget.swift in Sources */,

@@ -153,8 +153,8 @@ extension DeviceListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let device = viewModel.devices[indexPath.row]
-//        let filmVC = FilmsVC(viewModel: FilmsViewModel(category: category, service: FilmService()))
-//        self.navigationController?.pushViewController(filmVC, animated: true)
+        let detail = DeviceDetailViewController(viewModel: DeviceDetailViewModel(device: device))
+        self.navigationController?.pushViewController(detail, animated: true)
     }
     
 }
