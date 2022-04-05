@@ -17,13 +17,13 @@ enum MockAPI {
 extension MockAPI: NetworkTarget {
     
     var baseURL: URL {
-        return URL(string: "https://assets.eventbase.com/apps/ios-interview-project/resources/")!
+        return URL(string: "https://dl.dropbox.com/s/ho11yptibsyjgxo/")!
     }
     
     var path: String {
         switch self {
         case .successResponse:
-            return "venuelistjson.json"
+            return "devices.json?dl=0"
         case .failureResponse:
             return ""
         }
