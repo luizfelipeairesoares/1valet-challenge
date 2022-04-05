@@ -33,7 +33,7 @@ class DeviceListViewController: UIViewController, DeviceListVCProtocol {
         return search
     }()
     
-    private lazy var tableView: UITableView = {
+    lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.separatorColor = .lightGray
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)

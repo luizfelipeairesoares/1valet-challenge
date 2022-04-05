@@ -17,6 +17,14 @@
 		552F8E4227FB8DB300162BE7 /* DeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E4127FB8DB300162BE7 /* DeviceCell.swift */; };
 		552F8E4527FBBF8900162BE7 /* DeviceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E4427FBBF8900162BE7 /* DeviceDetailViewController.swift */; };
 		552F8E4727FBBFA300162BE7 /* DeviceDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E4627FBBFA300162BE7 /* DeviceDetailViewModel.swift */; };
+		552F8E4A27FBC7F900162BE7 /* DeviceServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E4927FBC7F900162BE7 /* DeviceServiceTests.swift */; };
+		552F8E4D27FBC8BC00162BE7 /* DeviceCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E4C27FBC8BC00162BE7 /* DeviceCellTests.swift */; };
+		552F8E5227FBC9DA00162BE7 /* DeviceDetailVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E5127FBC9DA00162BE7 /* DeviceDetailVCTests.swift */; };
+		552F8E5427FBCA6E00162BE7 /* DeviceDetailViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E5327FBCA6E00162BE7 /* DeviceDetailViewModelMock.swift */; };
+		552F8E5627FBCB7900162BE7 /* DeviceDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E5527FBCB7900162BE7 /* DeviceDetailViewModelTests.swift */; };
+		552F8E5827FBCC2000162BE7 /* DeviceListViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E5727FBCC2000162BE7 /* DeviceListViewModelMock.swift */; };
+		552F8E5A27FBCCCB00162BE7 /* DeviceListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E5927FBCCCB00162BE7 /* DeviceListViewModelTests.swift */; };
+		552F8E5C27FBCD6200162BE7 /* DeviceListVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552F8E5B27FBCD6200162BE7 /* DeviceListVCTests.swift */; };
 		55FBDC6427F67C3B00905696 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDC6327F67C3B00905696 /* AppDelegate.swift */; };
 		55FBDC6627F67C3B00905696 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FBDC6527F67C3B00905696 /* SceneDelegate.swift */; };
 		55FBDC6D27F67C3F00905696 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55FBDC6C27F67C3F00905696 /* Assets.xcassets */; };
@@ -69,6 +77,14 @@
 		552F8E4127FB8DB300162BE7 /* DeviceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceCell.swift; sourceTree = "<group>"; };
 		552F8E4427FBBF8900162BE7 /* DeviceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailViewController.swift; sourceTree = "<group>"; };
 		552F8E4627FBBFA300162BE7 /* DeviceDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailViewModel.swift; sourceTree = "<group>"; };
+		552F8E4927FBC7F900162BE7 /* DeviceServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceServiceTests.swift; sourceTree = "<group>"; };
+		552F8E4C27FBC8BC00162BE7 /* DeviceCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceCellTests.swift; sourceTree = "<group>"; };
+		552F8E5127FBC9DA00162BE7 /* DeviceDetailVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailVCTests.swift; sourceTree = "<group>"; };
+		552F8E5327FBCA6E00162BE7 /* DeviceDetailViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailViewModelMock.swift; sourceTree = "<group>"; };
+		552F8E5527FBCB7900162BE7 /* DeviceDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailViewModelTests.swift; sourceTree = "<group>"; };
+		552F8E5727FBCC2000162BE7 /* DeviceListViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewModelMock.swift; sourceTree = "<group>"; };
+		552F8E5927FBCCCB00162BE7 /* DeviceListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewModelTests.swift; sourceTree = "<group>"; };
+		552F8E5B27FBCD6200162BE7 /* DeviceListVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListVCTests.swift; sourceTree = "<group>"; };
 		55FBDC6027F67C3B00905696 /* valet-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "valet-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55FBDC6327F67C3B00905696 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55FBDC6527F67C3B00905696 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,6 +175,51 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		552F8E4827FBC7E100162BE7 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				552F8E4927FBC7F900162BE7 /* DeviceServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		552F8E4B27FBC8AF00162BE7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				552F8E4C27FBC8BC00162BE7 /* DeviceCellTests.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		552F8E4E27FBC9A600162BE7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				552F8E5027FBC9AF00162BE7 /* List */,
+				552F8E4F27FBC9AB00162BE7 /* Detail */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		552F8E4F27FBC9AB00162BE7 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				552F8E5127FBC9DA00162BE7 /* DeviceDetailVCTests.swift */,
+				552F8E5327FBCA6E00162BE7 /* DeviceDetailViewModelMock.swift */,
+				552F8E5527FBCB7900162BE7 /* DeviceDetailViewModelTests.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		552F8E5027FBC9AF00162BE7 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				552F8E5727FBCC2000162BE7 /* DeviceListViewModelMock.swift */,
+				552F8E5927FBCCCB00162BE7 /* DeviceListViewModelTests.swift */,
+				552F8E5B27FBCD6200162BE7 /* DeviceListVCTests.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
 		55FBDC5727F67C3B00905696 = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +259,9 @@
 		55FBDC7927F67C3F00905696 /* valet-challengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				552F8E4E27FBC9A600162BE7 /* Controllers */,
+				552F8E4B27FBC8AF00162BE7 /* Views */,
+				552F8E4827FBC7E100162BE7 /* Services */,
 				55FBDCAB27F67DC800905696 /* Network */,
 				552F8E3827F8BDA500162BE7 /* Utils */,
 				55FBDC7A27F67C3F00905696 /* valet_challengeTests.swift */,
@@ -485,10 +549,18 @@
 			files = (
 				552F8E3C27F8BDBF00162BE7 /* XCTestCase+Extension.swift in Sources */,
 				552F8E3B27F8BDBF00162BE7 /* Utils.swift in Sources */,
+				552F8E5C27FBCD6200162BE7 /* DeviceListVCTests.swift in Sources */,
 				55FBDCB327F67E1D00905696 /* MockAPI.swift in Sources */,
+				552F8E4D27FBC8BC00162BE7 /* DeviceCellTests.swift in Sources */,
+				552F8E5627FBCB7900162BE7 /* DeviceDetailViewModelTests.swift in Sources */,
 				55FBDCB127F67DF500905696 /* NetworkProviderMock.swift in Sources */,
 				55FBDC7B27F67C3F00905696 /* valet_challengeTests.swift in Sources */,
 				55FBDCB027F67DF500905696 /* NetworkProviderTests.swift in Sources */,
+				552F8E5A27FBCCCB00162BE7 /* DeviceListViewModelTests.swift in Sources */,
+				552F8E4A27FBC7F900162BE7 /* DeviceServiceTests.swift in Sources */,
+				552F8E5227FBC9DA00162BE7 /* DeviceDetailVCTests.swift in Sources */,
+				552F8E5827FBCC2000162BE7 /* DeviceListViewModelMock.swift in Sources */,
+				552F8E5427FBCA6E00162BE7 /* DeviceDetailViewModelMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
