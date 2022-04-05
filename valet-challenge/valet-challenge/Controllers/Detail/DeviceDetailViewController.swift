@@ -95,13 +95,10 @@ class DeviceDetailViewController: UIViewController, DeviceDetailVCProtocol {
     // MARK: - Protocol Functions
     
     func showDevice() {
-        if let imageUrl = viewModel.device.imageUrl {
-            imageView.downloadImage(imageUrl)
-        }
-        
+        imageView.downloadImage(viewModel.device.imageUrl, placeholder: UIImage(systemName: "square.dashed"))
         titleLabel.text = viewModel.device.title
         typeLabel.text = viewModel.device.type
-        priceLabel.text = "\(viewModel.device.price) \(viewModel.device.currency)"
+        priceLabel.text = "\(viewModel.device.currency) \(viewModel.device.price)"
         descLabel.text = viewModel.device.desc
     }
     

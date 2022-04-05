@@ -41,9 +41,7 @@ class DeviceCell: UITableViewCell {
     
     func setup(device: Device) {
         titleLabel.text = device.title
-        if let imageUrl = device.imageUrl {
-            thumbImageView.downloadImage(imageUrl)
-        }
+        thumbImageView.downloadImage(device.imageUrl, placeholder: UIImage(systemName: "square.dashed"))
     }
     
     // MARK: - Private functions

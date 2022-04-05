@@ -23,6 +23,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let viewModel = DeviceListViewModel(service: DeviceService())
         let viewController = DeviceListViewController(viewModel: viewModel)
         let navController = UINavigationController(rootViewController: viewController)
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .systemGreen.withAlphaComponent(0.5) //84c24a
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+
+        navController.navigationBar.tintColor = .white
+        navController.navigationBar.standardAppearance = appearance
+        navController.navigationBar.compactAppearance = appearance
+        navController.navigationBar.scrollEdgeAppearance = appearance
         
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
