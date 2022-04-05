@@ -73,7 +73,7 @@ class DeviceListViewModel: DeviceListViewModelProtocol {
         }
         isFiltering = true
         devices = allDevices.filter({ $0.title.lowercased().contains(searchText.lowercased()) })
-        viewController?.reloadDevices()
+        devices.isEmpty ? viewController?.showEmptyView() : viewController?.reloadDevices()
     }
     
 }
