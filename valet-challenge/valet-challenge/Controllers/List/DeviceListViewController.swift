@@ -33,7 +33,7 @@ class DeviceListViewController: UIViewController, DeviceListVCProtocol {
         return search
     }()
     
-    private lazy var tableView: UITableView = {
+    lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.separatorColor = .lightGray
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
@@ -153,8 +153,8 @@ extension DeviceListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let device = viewModel.devices[indexPath.row]
-//        let filmVC = FilmsVC(viewModel: FilmsViewModel(category: category, service: FilmService()))
-//        self.navigationController?.pushViewController(filmVC, animated: true)
+        let detail = DeviceDetailViewController(viewModel: DeviceDetailViewModel(device: device))
+        self.navigationController?.pushViewController(detail, animated: true)
     }
     
 }
